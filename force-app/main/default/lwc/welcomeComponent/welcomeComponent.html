@@ -1,0 +1,11 @@
+<template>
+    <h1> WELCOME {welcomename} TO LWCAPP </h1>
+    <lightning-input label="Enter name" onchange={showmessage}></lightning-input>
+    <template for:each={accounts.data} for:item="con">
+        <div key={con.Id}>
+            <lightning-card title={con.Name}>
+                {con.type}
+            </lightning-card>
+        </div>
+    </template>
+</template>

@@ -1,0 +1,10 @@
+<template>
+    <h1 style="color: white;">View Accounts</h1>
+    <template for:each={accounts.data} for:item="con">
+        <div key={con.Id}>
+            <lightning-card title={con.Name}>
+                {con.type}
+            </lightning-card>
+        </div>
+    </template>
+</template>

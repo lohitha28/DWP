@@ -1,0 +1,29 @@
+<template>
+    <lightning-card>
+        <div class="slds-grid slds-gutters">
+            <div class="slds-col slds-size_1-of-3 " >
+              <span >
+                <p style="text-align:center ;padding: 35%30%;font-size:30px;font-family:cursive"> Welcome to Lohi's Kitchen !</p></span>
+            </div>
+            <div class="slds-col slds-size_2-of-3">
+              <span>
+                <lightning-carousel >
+                    <lightning-carousel-image
+                        src = {food1url}
+                        header = "Wanna hear a joke about Pizza?"
+                        description = "Never mind it's too CHEEEEEEZY!"
+                        style="max-width:100%;max-height:100%; ">
+                    </lightning-carousel-image>
+                    <lightning-carousel-image
+                        src = {food2url}
+                        header = "Hungry?"
+                        description = "Lets MEAT up!"
+                        style="max-width:100%;max-height:100%;">
+                    </lightning-carousel-image>
+                    </lightning-carousel>
+              </span>
+            </div>
+          </div>
+    </lightning-card>
+
+</template>
